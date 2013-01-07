@@ -1,12 +1,32 @@
 module.exports = {
-  people: [
-    { id: 'obama',
-      name: 'Barack Obama',
-      webs: [
-        { url   : 'http://www.barackobama.org',
-          name  : 'Official Site',
-          notes : ''
+  sources: [
+    { id    : 'obama-official'
+    , name  : 'Barack Obama Website'
+    , notes : ''
+    , webs  : [
+        { name  : 'Barack Obama Website'
+        , url   : 'http://www.barackobama.org'
         }
+      ]
+    }
+  ]
+, people: [
+    { id: 'barack-obama'
+    , name: 'Barack Obama'
+    , notes: ''
+    , member: [
+        'obama-admin'
+      ]
+    , sources: [
+        'obama-official'
+      ]
+    }
+  ]
+, orgs: [
+    { id: 'obama-admin'
+    , name: 'Obama Administration'
+    , webs: [
+        
       ]
     }
   ]

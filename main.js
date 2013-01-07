@@ -1,6 +1,8 @@
 var files = [
   'data/obama'
 , 'data/cfr'
+, 'data/wikipedia'
+, 'data/illuminati'
 ];
 var dots = new (function() {
   var _this = this;

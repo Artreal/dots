@@ -3,17 +3,23 @@ module.exports = {
     { id    : 'cfr-official'
     , name  : 'CFR Website'
     , notes : ''
-    , webs  : [
-        { name  : 'CFR Website'
-        , url   : 'http://www.cfr.org'
-        }
-      ]
+    , url   : 'http://www.cfr.org'
+    }
+  , { id    : 'wikipedia-cfr-members'
+    , main  : 'wikipedia'
+    , name  : 'Wikipedia List of CFR Members'
+    , notes : ''
+    , url   : 'http://en.wikipedia.org/wiki/Members_of_the_Council_on_Foreign_Relations'
     }
   ]
 , orgs: [
     { id    : 'cfr'
     , name  : 'Council on Foreign Relations'
     , notes : ''
+    
+    , sources: [
+        'cfr-official'
+      ]
     , hosted: [
         
       ]
