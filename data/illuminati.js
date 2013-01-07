@@ -3,7 +3,6 @@ module.exports = {
     { id    : 'illuminati'
     , name  : 'The Illuminati'
     , notes : ''
-    
     , sources: [
         
       ]

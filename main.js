@@ -3,6 +3,7 @@ var files = [
 , 'data/cfr'
 , 'data/wikipedia'
 , 'data/illuminati'
+, 'data/unsorted'
 ];
 var dots = new (function() {
   var _this = this;
@@ -16,17 +17,9 @@ var dots = new (function() {
     var line = '';
     for(var field in _this) {
       if(!Array.isArray(_this[field])) continue;
-      line += field + ':  ';
-      _this[field].forEach(function(obj) {
-        line += '"' + obj.name + '"    ';
-        if(line.length > 100) {
-          console.log(line);
-          line = '';
-        }
-      });
-      line += '\n';
+      console.log('\n' + field.toUpperCase() + ':');
+      console.log(_this[field].map(function(obj){ return obj.name; }));
     }
-    console.log(line);
   };
 })();
 dots.overview();
